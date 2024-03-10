@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import BottomNav from "@/components/BottomNav";
+import { BottomNav, TopNav } from "@/components/Navs";
 
 import "./globals.css";
 
@@ -11,8 +11,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Ali Ghanati's Website",
-  description:
-    "Greetings stranger, Welcome! Maybe you could find what you seek in my website, so please take a look :)",
+  description: "Greetings stranger! Welcome to my home [page].",
   icons: {
     icon: "favicon.ico",
   },
@@ -25,7 +24,8 @@ export default function RootLayout({
 }): JSX.Element {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={"pb-20 pt-0 md:pt-20 " + poppins.className}>
+        <TopNav />
         {children}
         <BottomNav />
       </body>
