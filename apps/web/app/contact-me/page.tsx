@@ -23,14 +23,14 @@ export default function Page(): JSX.Element {
           a.a.ghanati@gmail.com
         </a>
         <a
-          href="tel:+989921550548"
+          href="tel:+31687889058"
           target="_blank"
           className="flex items-center gap-2 bg-secondary p-4 rounded-xl border border-primary"
         >
           <div className="p-2 rounded w-10 h-10">
             <PhoneIcon className="text-primary" width={24} height={24} />
           </div>
-          +989921550548
+          +31687889058
         </a>
         <a
           href="https://linkedin.com/in/ali-asghar-ghanati"

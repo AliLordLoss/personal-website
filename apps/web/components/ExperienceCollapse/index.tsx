@@ -30,7 +30,7 @@ export default function ExperienceCollapse({
           setOpen((open) => !open);
         }}
       >
-        <div className="bg-secondary p-2 rounded w-10 h-10">
+        <div className="bg-secondary p-2 rounded w-16 h-16 flex items-center justify-center">
           <Image src={image} alt={imageAlt} />
         </div>
         <div className="flex flex-col justify-center ms-2">

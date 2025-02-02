@@ -1,5 +1,7 @@
 import ExperienceCollapse from "@/components/ExperienceCollapse";
+import smit from "@/assets/images/smit.svg";
 import akka from "@/assets/images/akka.png";
+import kangonio from "@/assets/images/kangonio.png";
 import twelveWork from "@/assets/images/twelve-work.png";
 import asanBourse from "@/assets/images/asan-bourse.png";
 import weblite from "@/assets/images/weblite.png";
@@ -9,11 +11,44 @@ export default function Page(): JSX.Element {
     <main className="p-4 md:px-64">
       <div className="my-4 ms-2 text-xl font-bold">Work Experience</div>
       <ExperienceCollapse
+        image={smit}
+        imageAlt="smit"
+        title="Test Engineer"
+        company="Smit Thermal Solutions"
+        date="Sep 2024 - Present (part-time)"
+      >
+        <p>
+          <strong>
+            <a
+              href="https://www.smitthermalsolutions.com/"
+              target="_blank"
+              className="text-sky-400 underline"
+            >
+              Smit Thermal Solutions
+            </a>
+          </strong>{" "}
+          is a developer and manufacturer of high-quality equipment for thermal
+          processes.
+        </p>
+        <div>A summary of my work in this company:</div>
+        <ul>
+          <li>
+            Collaborated with a software engineering team to test the control
+            software of an industrial oven.
+          </li>
+          <li>
+            Learned to use multiple tools like Cordis Suite, digital twins, HMI
+            and etc along the way.
+          </li>
+          <li>Created detailed reports of the test scenarios and outcomes.</li>
+        </ul>
+      </ExperienceCollapse>
+      <ExperienceCollapse
         image={akka}
         imageAlt="akka"
         title="Software Engineer"
         company="Akka"
-        date="Sep 2023 - Present"
+        date="Sep 2023 - Aug 2024"
       >
         <p>
           <strong>
@@ -34,6 +69,21 @@ export default function Page(): JSX.Element {
             transformed them into a more desired structure.
           </li>
           <li>
+            Implemtented a Referral system on the previously mentioned Nest.js
+            project.
+          </li>
+          <li>
+            Designed a cron job to update database using Nest.js task scheduling
+            package, as well as having the option to trigger this update
+            manually using a protected API endpoint (only accessible to admin
+            users).
+          </li>
+          <li>
+            Worked on a dapp (decentralized app), using technologies like
+            Turborepo and to giv users a interface to interact with the Nest.js
+            backend.
+          </li>
+          <li>
             Helped develop an SDK for calling the Nest.js APIs an publish it on
             npm.
           </li>
@@ -47,11 +97,43 @@ export default function Page(): JSX.Element {
         </ul>
       </ExperienceCollapse>
       <ExperienceCollapse
+        image={kangonio}
+        imageAlt="kangonio"
+        title="Full Stack Engineer"
+        company="Kangonio"
+        date="June 2022 - Oct 2023 (part-time)"
+      >
+        <strong>
+          <a
+            href="https://kangonio.com/"
+            target="_blank"
+            className="text-sky-400 underline"
+          >
+            Kangonio
+          </a>
+        </strong>
+        <div>
+          The highlight of What I did at Kangonio is listed below, omitting some
+          other not-so-noticable tasks:
+        </div>
+        <ul>
+          <li>
+            Maintained an application that featured a fully functioning online
+            shop as well as providing APIs for public use (SaaS).
+          </li>
+          <li>
+            Implemented discount codes, having the option to choose between
+            percentage discount or amount discount, un- limited time or limited
+            time and etc.
+          </li>
+        </ul>
+      </ExperienceCollapse>
+      <ExperienceCollapse
         image={twelveWork}
         imageAlt="twelve work"
-        title="Software Engineer"
+        title="Full Stack Engineer"
         company="Twelve Work"
-        date="June 2022 - Oct 2023"
+        date="June 2022 - Oct 2023 (part-time)"
       >
         <p>
           <strong>Twelve Work</strong> is an innovative CRM project
@@ -83,7 +165,7 @@ export default function Page(): JSX.Element {
         imageAlt="asan bourse"
         title="Frontend Developer"
         company="Asan Bourse"
-        date="Sep 2021 - May 2022"
+        date="Sep 2021 - May 2022 (part-time)"
       >
         <p>
           <strong>
