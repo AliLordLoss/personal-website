@@ -37,10 +37,9 @@ export default function Page(): JSX.Element {
             software of an industrial oven.
           </li>
           <li>
-            Learned to use multiple tools like Cordis Suite, digital twins, HMI
-            and etc along the way.
+            Learned to use multiple tools like Cordis Suite, digital twins and
+            HMI along the way.
           </li>
-          <li>Created detailed reports of the test scenarios and outcomes.</li>
         </ul>
       </ExperienceCollapse>
       <ExperienceCollapse
