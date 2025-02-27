@@ -22,7 +22,13 @@ export default function Page(): JSX.Element {
           className={`p-4 md:pt-12 md:block ${activeSection === "#about" ? "block" : "hidden"}`}
         >
           <div className="flex flex-col md:items-center">
-            <Image src={avatar} alt={"avatar"} width={128} height={128} />
+            <Image
+              src={avatar}
+              alt={"avatar"}
+              width={128}
+              height={128}
+              priority
+            />
             <div className="mt-4 text-xl font-bold">Ali Ghanati</div>
             <div className="text-primary">
               Software Engineer & Full Stack Developer
@@ -54,7 +60,7 @@ export default function Page(): JSX.Element {
               </div>
             </div>
             <div className="overflow-hidden w-full md:w-1/2 lg:w-2/5">
-              <Image className="rounded-xl" src={me} alt="again, me" />
+              <Image className="rounded-xl" src={me} alt="me" priority />
             </div>
           </div>
           <div>

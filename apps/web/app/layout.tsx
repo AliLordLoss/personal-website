@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto_Condensed } from "next/font/google";
-import { BottomNav, SideNav } from "@/components/Navs";
+import { SideNav } from "@/components/Navs";
 
 import "./globals.css";
 

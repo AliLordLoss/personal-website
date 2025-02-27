@@ -1,12 +1,38 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { sections } from "../routes";
 import { ChevronRightIcon } from "@/components/Icons";
 
 export default function SideNav(): JSX.Element {
   const [open, setOpen] = useState(true);
+  const [active, setActive] = useState("");
+
+  useEffect(() => {
+    setActive(window.location.hash || "#about");
+
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.3,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry: any) => {
+        if (entry.isIntersecting) {
+          setActive(`#${entry.target.id}`);
+        }
+      });
+    }, options);
+
+    sections.forEach((section) => {
+      const el = document.querySelector(section.id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <nav
@@ -29,7 +55,7 @@ export default function SideNav(): JSX.Element {
           <Link
             key={section.id}
             href={section.id}
-            className="flex flex-row gap-2 items-center px-4 py-2 text-primary hover:bg-neutral-200"
+            className={`flex flex-row gap-2 items-center px-4 py-2 text-primary hover:bg-neutral-200 ${active === section.id ? "bg-neutral-300" : ""}`}
           >
             <section.icon className="min-w-6" width={24} height={24} />
             {open && section.title}
