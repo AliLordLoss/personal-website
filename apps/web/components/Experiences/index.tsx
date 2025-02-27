@@ -1,4 +1,4 @@
-import ExperienceCollapse from "@/components/ExperienceCollapse";
+import ExperienceItem from "@/components/Experiences/ExperienceItem";
 import smit from "@/assets/images/smit.svg";
 import akka from "@/assets/images/akka.png";
 import kangonio from "@/assets/images/kangonio.png";
@@ -6,16 +6,16 @@ import twelveWork from "@/assets/images/twelve-work.png";
 import asanBourse from "@/assets/images/asan-bourse.png";
 import weblite from "@/assets/images/weblite.png";
 
-export default function Page(): JSX.Element {
+export default function Experiences(): JSX.Element {
   return (
-    <main className="p-4 md:px-64">
-      <div className="my-4 ms-2 text-xl font-bold">Work Experience</div>
-      <ExperienceCollapse
+    <>
+      <div className="my-4 text-3xl font-bold">Work Experience</div>
+      <ExperienceItem
         image={smit}
         imageAlt="smit"
         title="Test Engineer"
         company="Smit Thermal Solutions"
-        date="Sep 2024 - Present (part-time)"
+        date="Sep 2024 - May 2025 (part-time)"
       >
         <p>
           <strong>
@@ -31,7 +31,7 @@ export default function Page(): JSX.Element {
           processes.
         </p>
         <div>A summary of my work in this company:</div>
-        <ul>
+        <ul className="list-disc list-outside ml-4">
           <li>
             Collaborated with a software engineering team to test the control
             software of an industrial oven.
@@ -41,8 +41,9 @@ export default function Page(): JSX.Element {
             HMI along the way.
           </li>
         </ul>
-      </ExperienceCollapse>
-      <ExperienceCollapse
+      </ExperienceItem>
+      <hr className="m-auto mt-3 max-w-96 w-full border-gray-500" />
+      <ExperienceItem
         image={akka}
         imageAlt="akka"
         title="Software Engineer"
@@ -62,7 +63,7 @@ export default function Page(): JSX.Element {
           is A Decentralized Exchange Aggregator
         </p>
         <div>I did a variety of jobs in this company, including:</div>
-        <ul>
+        <ul className="list-disc list-outside ml-4">
           <li>
             Worked on a Nest.js project that wrapped the main product APIs and
             transformed them into a more desired structure.
@@ -94,8 +95,9 @@ export default function Page(): JSX.Element {
             pools and saving them in Redis.
           </li>
         </ul>
-      </ExperienceCollapse>
-      <ExperienceCollapse
+      </ExperienceItem>
+      <hr className="m-auto mt-3 max-w-96 w-full border-gray-500" />
+      <ExperienceItem
         image={kangonio}
         imageAlt="kangonio"
         title="Full Stack Engineer"
@@ -115,7 +117,7 @@ export default function Page(): JSX.Element {
           The highlight of What I did at Kangonio is listed below, omitting some
           other not-so-noticable tasks:
         </div>
-        <ul>
+        <ul className="list-disc list-outside ml-4">
           <li>
             Maintained an application that featured a fully functioning online
             shop as well as providing APIs for public use (SaaS).
@@ -126,8 +128,9 @@ export default function Page(): JSX.Element {
             time and etc.
           </li>
         </ul>
-      </ExperienceCollapse>
-      <ExperienceCollapse
+      </ExperienceItem>
+      <hr className="m-auto mt-3 max-w-96 w-full border-gray-500" />
+      <ExperienceItem
         image={twelveWork}
         imageAlt="twelve work"
         title="Full Stack Engineer"
@@ -140,7 +143,7 @@ export default function Page(): JSX.Element {
         <div>
           My job in this company was also in a range of tasks, listed below:
         </div>
-        <ul>
+        <ul className="list-disc list-outside ml-4">
           <li>
             Worked on a WordPress plugin to import Woo-Commerce user data to our
             own database, learned to code with PHP and got familiar with
@@ -158,8 +161,9 @@ export default function Page(): JSX.Element {
             Collaborated remotely with a UI/UX Designer to get this job done.
           </li>
         </ul>
-      </ExperienceCollapse>
-      <ExperienceCollapse
+      </ExperienceItem>
+      <hr className="m-auto mt-3 max-w-96 w-full border-gray-500" />
+      <ExperienceItem
         image={asanBourse}
         imageAlt="asan bourse"
         title="Frontend Developer"
@@ -185,7 +189,7 @@ export default function Page(): JSX.Element {
           frontend developers as well as backend developers and ui/ux designers
           in the team. My main accomplishments in this company consist of:
         </div>
-        <ul>
+        <ul className="list-disc list-outside ml-4">
           <li>
             Developed a PWA called the ”Alarm App” Using Nuxt.js. This app was a
             web application with primary focus on mobile device users which
@@ -197,8 +201,9 @@ export default function Page(): JSX.Element {
             app.
           </li>
         </ul>
-      </ExperienceCollapse>
-      <ExperienceCollapse
+      </ExperienceItem>
+      <hr className="m-auto mt-3 max-w-96 w-full border-gray-500" />
+      <ExperienceItem
         image={weblite}
         imageAlt="weblite"
         title="Full Stack Developer"
@@ -222,7 +227,7 @@ export default function Page(): JSX.Element {
           This was my first time working with a team in industry. My tasks here
           were mostly educational and included items below:
         </div>
-        <ul>
+        <ul className="list-disc list-outside ml-4">
           <li>
             participated in an online course, & learned about HTML, CSS,
             JavaScript, Node.js, Express.js, PostgreSQL, Mon- goDB & Vue.js as
@@ -238,7 +243,7 @@ export default function Page(): JSX.Element {
             by this team)
           </li>
         </ul>
-      </ExperienceCollapse>
-    </main>
+      </ExperienceItem>
+    </>
   );
 }

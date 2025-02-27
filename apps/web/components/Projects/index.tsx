@@ -1,11 +1,11 @@
-import { GithubIcon, GlobeIcon } from "@/components/Icons";
+import { GithubIcon, GlobeIcon } from "../Icons";
 
-export default function Page(): JSX.Element {
+export default function Projects() {
   return (
-    <main className="p-4 md:px-64">
-      <div className="my-4 ms-2 text-xl font-bold">Projects</div>
+    <>
+      <div className="my-4 text-3xl font-bold">Projects</div>
       <ul>
-        <li className="border-b-2 border-gray-500 py-2">
+        <li className="py-2">
           <div className="flex items-center justify-between text-primary text-lg font-medium">
             <div>Gamein 2022: Frontend, Backend & Operations</div>
           </div>
@@ -16,7 +16,8 @@ export default function Page(): JSX.Element {
             Docker, NGINX.
           </p>
         </li>
-        <li className="border-b-2 border-gray-500 py-2">
+        <hr className="mt-3 mx-32 border-gray-500" />
+        <li className="py-2">
           <div className="flex items-center justify-between text-primary text-lg font-medium">
             <div>Smart Home: Embedded Systems Course Project</div>
             <a
@@ -34,7 +35,8 @@ export default function Page(): JSX.Element {
             Arduino, Raspberry Pi, ESP8266, Nuxt.js.
           </p>
         </li>
-        <li className="border-b-2 border-gray-500 py-2">
+        <hr className="mt-3 mx-32 border-gray-500" />
+        <li className="py-2">
           <div className="flex items-center justify-between text-primary text-lg font-medium">
             <div>Twelve Work: Frontend, Backend & Operations</div>
           </div>
@@ -46,7 +48,8 @@ export default function Page(): JSX.Element {
             Plugins (w/ PHP).
           </p>
         </li>
-        <li className="border-b-2 border-gray-500 py-2">
+        <hr className="mt-3 mx-32 border-gray-500" />
+        <li className="py-2">
           <div className="flex items-center justify-between text-primary text-lg font-medium">
             <div>Webelopers 2022: Frontend</div>
             <a
@@ -63,7 +66,8 @@ export default function Page(): JSX.Element {
             web development event. Technologies used: React.js, Next.js.
           </p>
         </li>
-        <li className="border-b-2 border-gray-500 py-2">
+        <hr className="mt-3 mx-32 border-gray-500" />
+        <li className="py-2">
           <div className="flex items-center justify-between text-primary text-lg font-medium">
             <div>WSS Site: Full Stack & Database Administration</div>
             <div className="flex">
@@ -89,7 +93,8 @@ export default function Page(): JSX.Element {
             NGINX.
           </p>
         </li>
-        <li className="border-b-2 border-gray-500 py-2">
+        <hr className="mt-3 mx-32 border-gray-500" />
+        <li className="py-2">
           <div className="flex items-center justify-between text-primary text-lg font-medium">
             <div>Alarm App: Frontend</div>
             <a
@@ -106,7 +111,8 @@ export default function Page(): JSX.Element {
             Vue.js, Nuxt.js.
           </p>
         </li>
-        <li className="border-b-2 border-gray-500 py-2">
+        <hr className="mt-3 mx-32 border-gray-500" />
+        <li className="py-2">
           <div className="flex items-center justify-between text-primary text-lg font-medium">
             <div>Record Tracker: Frontend</div>
             <div className="flex">
@@ -131,7 +137,8 @@ export default function Page(): JSX.Element {
             records. Technologies used: Vue.js, Nuxt.js.
           </p>
         </li>
-        <li className="border-b-2 border-gray-500 py-2">
+        <hr className="mt-3 mx-32 border-gray-500" />
+        <li className="py-2">
           <div className="flex items-center justify-between text-primary text-lg font-medium">
             <div>Chess Game: Python Application</div>
             <a
@@ -144,7 +151,8 @@ export default function Page(): JSX.Element {
           </div>
           <p>A two-player chess game developed in Python.</p>
         </li>
-        <li className="border-b-2 border-gray-500 py-2">
+        <hr className="mt-3 mx-32 border-gray-500" />
+        <li className="py-2">
           <div className="flex items-center justify-between text-primary text-lg font-medium">
             <div>Mine Sweeper Game: Frontend</div>
             <a
@@ -161,6 +169,6 @@ export default function Page(): JSX.Element {
           </p>
         </li>
       </ul>
-    </main>
+    </>
   );
 }

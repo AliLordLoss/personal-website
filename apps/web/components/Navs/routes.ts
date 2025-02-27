@@ -1,31 +1,24 @@
 import { SVGAttributes } from "react";
-import { BriefcaseIcon, MessageIcon, FolderIcon, HomeIcon } from "../Icons";
+import {
+  BriefcaseIcon,
+  MessageIcon,
+  FolderIcon,
+  AddressCardIcon,
+  IdBadgeIcon,
+  UserGraduateIcon,
+} from "../Icons";
 
-export interface RouteProps {
-  href: string;
+export interface SectionProps {
+  id: string;
   title: string;
   icon: React.FC<React.PropsWithChildren<SVGAttributes<HTMLOrSVGElement>>>;
 }
 
-export const routes: Array<RouteProps> = [
-  {
-    href: "/",
-    title: "Home",
-    icon: HomeIcon,
-  },
-  {
-    href: "/work-experience",
-    title: "Experience",
-    icon: BriefcaseIcon,
-  },
-  {
-    href: "/projects",
-    title: "Projects",
-    icon: FolderIcon,
-  },
-  {
-    href: "/contact-me",
-    title: "Contact",
-    icon: MessageIcon,
-  },
+export const sections: Array<SectionProps> = [
+  { id: "#about", title: "About Me", icon: AddressCardIcon },
+  { id: "#education", title: "Education", icon: UserGraduateIcon },
+  { id: "#experiences", title: "Experiences", icon: BriefcaseIcon },
+  { id: "#projects", title: "Projects", icon: FolderIcon },
+  { id: "#contact-me", title: "Contact Me", icon: MessageIcon },
+  { id: "#bio", title: "Bio", icon: IdBadgeIcon },
 ];

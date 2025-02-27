@@ -5,17 +5,17 @@ import {
   PhoneIcon,
   TelegramIcon,
   XIcon,
-} from "@/components/Icons";
+} from "../Icons";
 
-export default function Page(): JSX.Element {
+export default function ContactMe() {
   return (
-    <main className="p-4">
-      <div className="my-4 ms-2 text-xl font-bold">Contact Me</div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+    <>
+      <div className="my-4 text-3xl font-bold">Contact Me</div>
+      <div className="flex flex-col gap-4 lg:gap-8">
         <a
           href="mailto:a.a.ghanati@gmail.com"
           target="_blank"
-          className="flex items-center gap-2 bg-secondary p-4 rounded-xl border border-primary"
+          className="flex items-center gap-2 bg-secondary p-4 rounded-xl border border-primary w-64"
         >
           <div className="p-2 rounded w-10 h-10">
             <EnvelopeIcon className="text-primary" width={24} height={24} />
@@ -25,7 +25,7 @@ export default function Page(): JSX.Element {
         <a
           href="tel:+31687889058"
           target="_blank"
-          className="flex items-center gap-2 bg-secondary p-4 rounded-xl border border-primary"
+          className="flex items-center gap-2 bg-secondary p-4 rounded-xl border border-primary w-64"
         >
           <div className="p-2 rounded w-10 h-10">
             <PhoneIcon className="text-primary" width={24} height={24} />
@@ -35,7 +35,7 @@ export default function Page(): JSX.Element {
         <a
           href="https://linkedin.com/in/ali-asghar-ghanati"
           target="_blank"
-          className="flex items-center gap-2 bg-secondary p-4 rounded-xl border border-primary"
+          className="flex items-center gap-2 bg-secondary p-4 rounded-xl border border-primary w-64"
         >
           <div className="p-2 rounded w-10 h-10">
             <LinkedinIcon className="text-primary" width={24} height={24} />
@@ -45,7 +45,7 @@ export default function Page(): JSX.Element {
         <a
           href="https://github.com/AliLordLoss"
           target="_blank"
-          className="flex items-center gap-2 bg-secondary p-4 rounded-xl border border-primary"
+          className="flex items-center gap-2 bg-secondary p-4 rounded-xl border border-primary w-64"
         >
           <div className="p-2 rounded w-10 h-10">
             <GithubSquareIcon className="text-primary" width={24} height={24} />
@@ -55,7 +55,7 @@ export default function Page(): JSX.Element {
         <a
           href="https://x.com/alilordloss"
           target="_blank"
-          className="flex items-center gap-2 bg-secondary p-4 rounded-xl border border-primary"
+          className="flex items-center gap-2 bg-secondary p-4 rounded-xl border border-primary w-64"
         >
           <div className="p-2 rounded w-10 h-10">
             <XIcon className="text-primary" width={24} height={24} />
@@ -65,7 +65,7 @@ export default function Page(): JSX.Element {
         <a
           href="https://t.me/AliLordLoss"
           target="_blank"
-          className="flex items-center gap-2 bg-secondary p-4 rounded-xl border border-primary"
+          className="flex items-center gap-2 bg-secondary p-4 rounded-xl border border-primary w-64"
         >
           <div className="p-2 rounded w-10 h-10">
             <TelegramIcon className="text-primary" width={24} height={24} />
@@ -73,6 +73,6 @@ export default function Page(): JSX.Element {
           @AliLordLoss
         </a>
       </div>
-    </main>
+    </>
   );
 }

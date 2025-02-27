@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
-import { BottomNav, TopNav } from "@/components/Navs";
+import { Roboto_Condensed } from "next/font/google";
+import { BottomNav, SideNav } from "@/components/Navs";
 
 import "./globals.css";
 
-const poppins = Poppins({
+const myFont = Roboto_Condensed({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
@@ -24,10 +24,11 @@ export default function RootLayout({
 }): JSX.Element {
   return (
     <html lang="en">
-      <body className={"pb-20 pt-0 md:pt-20 " + poppins.className}>
-        <TopNav />
+      <body
+        className={"overflow-visible md:flex pb-20 md:pb-0 " + myFont.className}
+      >
+        <SideNav />
         {children}
-        <BottomNav />
       </body>
     </html>
   );
