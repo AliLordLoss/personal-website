@@ -15,7 +15,7 @@ export default function Experiences(): JSX.Element {
         imageAlt="smit"
         title="Test Engineer"
         company="Smit Thermal Solutions"
-        date="Sep 2024 - May 2025 (part-time)"
+        date="Sep 2024 - Mar 2025 (part-time)"
       >
         <p>
           <strong>
@@ -124,7 +124,7 @@ export default function Experiences(): JSX.Element {
           </li>
           <li>
             Implemented discount codes, having the option to choose between
-            percentage discount or amount discount, un- limited time or limited
+            percentage discount or amount discount, unlimited time or limited
             time and etc.
           </li>
         </ul>
@@ -230,8 +230,8 @@ export default function Experiences(): JSX.Element {
         <ul className="list-disc list-outside ml-4">
           <li>
             participated in an online course, & learned about HTML, CSS,
-            JavaScript, Node.js, Express.js, PostgreSQL, Mon- goDB & Vue.js as
-            an entry requirement.
+            JavaScript, Node.js, Express.js, PostgreSQL, MongoDB & Vue.js as an
+            entry requirement.
           </li>
           <li>
             Developed a version of the famous UNO game with Vue.js, Express.js &
