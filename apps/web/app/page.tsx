@@ -36,7 +36,7 @@ export default function Page(): JSX.Element {
 
             <a
               href="/cv.pdf"
-              download="Aliasghar Ghanati's CV"
+              download="Ali Ghanati's CV"
               className="bg-secondary w-full text-center rounded-xl py-2 mt-4 md:w-96 hover:shadow"
             >
               Download CV
@@ -48,7 +48,7 @@ export default function Page(): JSX.Element {
               <div>Greetings stranger! Welcome to my home [page].</div>
               <div>
                 My name is Ali Ghanati and I am a Software & Embedded Systems
-                Engineer. Here are some pictures of me:
+                Engineer.
               </div>
               <div className="mt-2">
                 let me introduce myself briefly. I'm a Software Engineer and
