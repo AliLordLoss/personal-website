@@ -80,8 +80,8 @@ export default function Experiences(): JSX.Element {
           </li>
           <li>
             Worked on a dapp (decentralized app), using technologies like
-            Turborepo and to giv users a interface to interact with the Nest.js
-            backend.
+            Turborepo to offer an appealing and user-friendly interface to
+            interact with the Nest.js backend.
           </li>
           <li>
             Helped develop an SDK for calling the Nest.js APIs an publish it on
