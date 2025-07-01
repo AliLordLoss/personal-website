@@ -11,7 +11,7 @@ export default function ContactMe() {
   return (
     <>
       <div className="my-4 text-3xl font-bold">Contact Me</div>
-      <div className="flex flex-col gap-4 lg:gap-8">
+      <div className="flex flex-col items-center gap-4 lg:gap-8 lg:items-start">
         <a
           href="mailto:a.a.ghanati@gmail.com"
           target="_blank"

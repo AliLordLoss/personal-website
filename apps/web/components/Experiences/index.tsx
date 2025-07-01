@@ -16,30 +16,15 @@ export default function Experiences(): JSX.Element {
         title="Test Engineer"
         company="Smit Thermal Solutions"
         date="Sep 2024 - Mar 2025 (part-time)"
+        link="https://www.smitthermalsolutions.com/"
       >
-        <p>
-          <strong>
-            <a
-              href="https://www.smitthermalsolutions.com/"
-              target="_blank"
-              className="text-sky-400 underline"
-            >
-              Smit Thermal Solutions
-            </a>
-          </strong>{" "}
-          is a developer and manufacturer of high-quality equipment for thermal
-          processes.
-        </p>
-        <div>A summary of my work in this company:</div>
         <ul className="list-disc list-outside ml-4">
+          <li>Tested and validated industrial oven control software.</li>
           <li>
-            Collaborated with a software engineering team to test the control
-            software of an industrial oven.
+            Executed structured tests to ensure system reliability under varied
+            conditions.
           </li>
-          <li>
-            Learned to use multiple tools like Cordis Suite, digital twins and
-            HMI along the way.
-          </li>
+          <li>Gained hands-on experience with modern code generation tools.</li>
         </ul>
       </ExperienceItem>
       <hr className="m-auto mt-3 max-w-96 w-full border-gray-500" />
@@ -49,8 +34,22 @@ export default function Experiences(): JSX.Element {
         title="Software Engineer"
         company="Akka"
         date="Sep 2023 - Aug 2024"
+        link="https://app.akka.finance"
       >
-        <p>
+        <ul className="list-disc list-outside ml-4">
+          <li>
+            Developed Nest.js APIs for a decentralized exchange aggregator.
+          </li>
+          <li>
+            Developed extensive test cases using Jest, and utilized them in
+            GitHub Actions pipeline.
+          </li>
+          <li>Built data collection scripts for backend analytics.</li>
+          <li>
+            Developed an example dApp frontend for API validation and reference.
+          </li>
+        </ul>
+        {/* <p>
           <strong>
             <a
               href="https://app.akka.finance"
@@ -94,7 +93,7 @@ export default function Experiences(): JSX.Element {
             Developed a Node.js script for gathering data from some liquidity
             pools and saving them in Redis.
           </li>
-        </ul>
+        </ul> */}
       </ExperienceItem>
       <hr className="m-auto mt-3 max-w-96 w-full border-gray-500" />
       <ExperienceItem
@@ -104,7 +103,11 @@ export default function Experiences(): JSX.Element {
         company="Kangonio"
         date="June 2022 - Oct 2023 (part-time)"
       >
-        <strong>
+        <ul className="list-disc list-outside ml-4">
+          <li>Maintained and tested existing e-commerce platform features.</li>
+          <li>Implemented and verified flexible discount code logic.</li>
+        </ul>
+        {/* <strong>
           <a
             href="https://kangonio.com/"
             target="_blank"
@@ -127,7 +130,7 @@ export default function Experiences(): JSX.Element {
             percentage discount or amount discount, unlimited time or limited
             time and etc.
           </li>
-        </ul>
+        </ul> */}
       </ExperienceItem>
       <hr className="m-auto mt-3 max-w-96 w-full border-gray-500" />
       <ExperienceItem
@@ -137,7 +140,14 @@ export default function Experiences(): JSX.Element {
         company="Twelve Work"
         date="June 2022 - Oct 2023 (part-time)"
       >
-        <p>
+        <ul className="list-disc list-outside ml-4">
+          <li>Developed data migration plugin and validated data integrity.</li>
+          <li>
+            Delivered backend features and redesigned frontend with React.
+          </li>
+          <li>Collaborated with UI/UX remotely to ensure design fidelity.</li>
+        </ul>
+        {/* <p>
           <strong>Twelve Work</strong> is an innovative CRM project
         </p>
         <div>
@@ -160,7 +170,7 @@ export default function Experiences(): JSX.Element {
           <li>
             Collaborated remotely with a UI/UX Designer to get this job done.
           </li>
-        </ul>
+        </ul> */}
       </ExperienceItem>
       <hr className="m-auto mt-3 max-w-96 w-full border-gray-500" />
       <ExperienceItem
@@ -170,7 +180,15 @@ export default function Experiences(): JSX.Element {
         company="Asan Bourse"
         date="Sep 2021 - May 2022 (part-time)"
       >
-        <p>
+        <ul className="list-disc list-outside ml-4">
+          <li>
+            Developed and tested a mobile-first PWA for market event alerts.
+          </li>
+          <li>
+            Exported app to Android and verified event notification logic.
+          </li>
+        </ul>
+        {/* <p>
           <strong>
             <a
               href="https://asanbourse.ir"
@@ -200,7 +218,7 @@ export default function Experiences(): JSX.Element {
             Worked with android studio to export the Alarm App as an android
             app.
           </li>
-        </ul>
+        </ul> */}
       </ExperienceItem>
       <hr className="m-auto mt-3 max-w-96 w-full border-gray-500" />
       <ExperienceItem
@@ -210,7 +228,15 @@ export default function Experiences(): JSX.Element {
         company="Weblite"
         date="Dec 2020 - May 2021"
       >
-        <p>
+        <ul className="list-disc list-outside ml-4">
+          <li>
+            Completed full-stack training, developing a multiplayer UNO game.
+          </li>
+          <li>
+            Built a React micro frontend integrated into a messenger platform.
+          </li>
+        </ul>
+        {/* <p>
           <strong>
             <a
               href="https://www.weblite.im"
@@ -242,7 +268,7 @@ export default function Experiences(): JSX.Element {
             ”paper” which was deployed on a messanger called weblite (Developed
             by this team)
           </li>
-        </ul>
+        </ul> */}
       </ExperienceItem>
     </>
   );
