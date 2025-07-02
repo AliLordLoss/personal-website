@@ -8,19 +8,13 @@ import Education from "@/components/Education";
 import Experiences from "@/components/Experiences";
 import Projects from "@/components/Projects";
 import ContactMe from "@/components/ContactMe";
-import { useState } from "react";
 import { BottomNav } from "@/components/Navs";
 
 export default function Page(): JSX.Element {
-  const [activeSection, setActiveSection] = useState("#about");
-
   return (
     <>
       <main className="md:px-12 md:pb-16 lg:px-60">
-        <section
-          id="about"
-          className={`p-4 md:pt-12 md:block ${activeSection === "#about" ? "block" : "hidden"}`}
-        >
+        <section id="about" className={`p-4 md:pt-12`}>
           <div className="flex flex-col md:items-center">
             <Image
               src={avatar}
@@ -73,34 +67,22 @@ export default function Page(): JSX.Element {
             </div>
           </div>
         </section>
-        <section
-          id="education"
-          className={`mt-4 p-4 md:border-t-2 border-black md:block ${activeSection === "#education" ? "block" : "hidden"}`}
-        >
+        <section id="education" className={`mt-4 p-4 border-t-2 border-black`}>
           <Education />
         </section>
         <section
           id="experiences"
-          className={`mt-4 p-4 md:border-t-2 border-black md:block ${activeSection === "#experiences" ? "block" : "hidden"}`}
+          className={`mt-4 p-4 border-t-2 border-black`}
         >
           <Experiences />
         </section>
-        <section
-          id="projects"
-          className={`mt-4 p-4 md:border-t-2 border-black md:block ${activeSection === "#projects" ? "block" : "hidden"}`}
-        >
+        <section id="projects" className={`mt-4 p-4 border-t-2 border-black`}>
           <Projects />
         </section>
-        <section
-          id="contact-me"
-          className={`mt-4 p-4 md:border-t-2 border-black md:block ${activeSection === "#contact-me" ? "block" : "hidden"}`}
-        >
+        <section id="contact-me" className={`mt-4 p-4 border-t-2 border-black`}>
           <ContactMe />
         </section>
-        <section
-          id="bio"
-          className={`mt-4 p-4 border-t-2 border-black md:block ${activeSection === "#about" ? "block" : "hidden"}`}
-        >
+        <section id="bio" className={`mt-4 p-4 border-t-2 border-black`}>
           <div className="my-4 text-3xl font-bold">Bio</div>
           <div>
             Now, if you're still here, let's talk a little bit more in depth
@@ -138,7 +120,7 @@ export default function Page(): JSX.Element {
             on the lookout for a new opportunity to dive into.
           </div>
           <div>
-            Now let's move on to my interests and hobbies. I have a profound
+            Lastly, let's talk about my interests and hobbies. I have a profound
             love for stories of different kind, and I take significant joy in
             reading novels. I take a special interest in persian mythology and
             poems, and had been a member of central council of poetry and
@@ -152,10 +134,7 @@ export default function Page(): JSX.Element {
         </section>
       </main>
 
-      <BottomNav
-        activeSection={activeSection}
-        setActiveSection={setActiveSection}
-      />
+      <BottomNav />
     </>
   );
 }

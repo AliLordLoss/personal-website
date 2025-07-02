@@ -4,7 +4,6 @@ import {
   MessageIcon,
   FolderIcon,
   AddressCardIcon,
-  IdBadgeIcon,
   UserGraduateIcon,
 } from "../Icons";
 
@@ -20,5 +19,4 @@ export const sections: Array<SectionProps> = [
   { id: "#experiences", title: "Experiences", icon: BriefcaseIcon },
   { id: "#projects", title: "Projects", icon: FolderIcon },
   { id: "#contact-me", title: "Contact Me", icon: MessageIcon },
-  { id: "#bio", title: "Bio", icon: IdBadgeIcon },
 ];

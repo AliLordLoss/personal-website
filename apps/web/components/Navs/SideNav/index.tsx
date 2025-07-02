@@ -6,8 +6,21 @@ import { sections } from "../routes";
 import { ChevronRightIcon } from "@/components/Icons";
 
 export default function SideNav(): JSX.Element {
-  const [open, setOpen] = useState(true);
-  const [active, setActive] = useState("");
+  const [open, setOpen] = useState<boolean>(true);
+  const [active, setActive] = useState<string>("");
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const savedOpen = localStorage.getItem("open");
+    if (savedOpen !== null) {
+      setOpen(savedOpen === "true");
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("open", open.toString());
+  }, [open]);
 
   useEffect(() => {
     setActive(window.location.hash || "#about");
