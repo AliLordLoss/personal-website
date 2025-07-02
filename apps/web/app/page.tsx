@@ -23,10 +23,10 @@ export default function Page(): JSX.Element {
               height={128}
               priority
             />
-            <div className="mt-4 text-xl font-bold">Ali Ghanati</div>
-            <div className="text-primary">
+            <h1 className="mt-4 text-xl font-bold">Ali Ghanati</h1>
+            <h2 className="text-primary">
               Software Engineer & Full Stack Developer
-            </div>
+            </h2>
 
             <a
               href="/cv.pdf"
@@ -38,7 +38,7 @@ export default function Page(): JSX.Element {
           </div>
           <div className="flex flex-col items-center lg:flex-row gap-4 my-4">
             <div className="overflow-hidden w-full lg:w-3/5 text-justify leading-5">
-              <div className="mt-4 text-3xl font-bold">About me</div>
+              <h3 className="mt-4 text-3xl font-bold">About me</h3>
               <div>Greetings stranger! Welcome to my home [page].</div>
               <div>
                 My name is Ali Ghanati and I am a Software & Embedded Systems
@@ -83,7 +83,7 @@ export default function Page(): JSX.Element {
           <ContactMe />
         </section>
         <section id="bio" className={`mt-4 p-4 border-t-2 border-black`}>
-          <div className="my-4 text-3xl font-bold">Bio</div>
+          <h3 className="my-4 text-3xl font-bold">Bio</h3>
           <div>
             Now, if you're still here, let's talk a little bit more in depth
             about me. I was interested in computers since middle school, and

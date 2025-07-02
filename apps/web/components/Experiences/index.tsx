@@ -9,7 +9,7 @@ import weblite from "@/assets/images/weblite.png";
 export default function Experiences(): JSX.Element {
   return (
     <>
-      <div className="my-4 text-3xl font-bold">Work Experience</div>
+      <h3 className="my-4 text-3xl font-bold">Work Experience</h3>
       <ExperienceItem
         image={smit}
         imageAlt="smit"

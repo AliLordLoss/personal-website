@@ -10,7 +10,7 @@ const myFont = Roboto_Condensed({
 });
 
 export const metadata: Metadata = {
-  title: "Ali Ghanati",
+  title: "Ali Ghanati - Software Engineer",
   description: "Greetings stranger! Welcome to Ali Ghanati's home [page].",
   openGraph: {
     title: "Ali Ghanati - Software Engineer",

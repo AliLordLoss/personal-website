@@ -3,7 +3,7 @@ import { GithubIcon, GlobeIcon } from "../Icons";
 export default function Projects() {
   return (
     <>
-      <div className="my-4 text-3xl font-bold">Projects</div>
+      <h3 className="my-4 text-3xl font-bold">Projects</h3>
       <ul>
         <li className="py-2">
           <div className="flex items-center justify-between text-primary text-lg font-medium">

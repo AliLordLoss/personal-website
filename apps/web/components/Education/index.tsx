@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Education(): JSX.Element {
   return (
     <>
-      <div className="my-4 text-3xl font-bold">Education</div>
+      <h3 className="my-4 text-3xl font-bold">Education</h3>
       <div className="px-2 mb-2">
         <div className="flex flex-row items-center py-3 text-sm">
           <div className="bg-secondary p-2 rounded w-16 h-16 flex items-center justify-center">
